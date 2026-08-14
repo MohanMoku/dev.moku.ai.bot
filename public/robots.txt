@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dev-moku-ai.vercel.app/sitemap.xml
