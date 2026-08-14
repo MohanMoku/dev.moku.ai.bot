@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     title: "Mohan Kumar S — Portfolio",
     description:
       "Explore Mohan Kumar S's education, skills, projects, work experience, and professional background.",
-    url: "https://your-domain.com",
+    url: "https://dev-moku-ai.vercel.app",
     siteName: "Mohan Kumar S",
     images: [
       {
-        url: "https://your-domain.com/og-image.png",
+        url: "https://dev-moku-ai.vercel.app/favicon.png",
         width: 1200,
         height: 630,
         alt: "Mohan Kumar S Portfolio",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Mohan Kumar S — Portfolio",
     description:
       "Explore Mohan Kumar S's skills, projects, education, and professional experience.",
-    images: ["https://your-domain.com/og-image.png"],
+    images: ["https://dev-moku-ai.vercel.app/favicon.png"],
   },
 
   icons: {
