@@ -4,7 +4,7 @@ import { promises as fs } from "node:fs";
 // Config — tune these constants directly, no need to hunt through the file.
 
 const LLM_MODEL = "nvidia/nemotron-3.5-lightning-30b-a3b";
-const EMBED_MODEL = "nvidia/nv-embed-v1";
+const EMBED_MODEL = "nvidia/llama-nemotron-embed-vl-1b-v2";
 
 const STORE_PATH = "./app/api/chat/vector-store.json";
 
@@ -13,7 +13,7 @@ const MAX_CONTEXT_CHARS = 6000;
 const RELEVANCE_THRESHOLD = 0.12;
 const MAX_HISTORY_MESSAGES = 8;
 const MAX_OUTPUT_TOKENS = 900;
-const REASONING_EFFORT = "low";
+// const REASONING_EFFORT = "low";
 
 const OFF_TOPIC_MESSAGES = [
   "Hey, I'm moku.ai — I only talk about Mohan Kumar S. Try asking about his skills, projects, or work experience!",
@@ -181,7 +181,7 @@ export async function* streamMohanAnswer(
       chat_template_kwargs: {
         enable_thinking: false,
       },
-    } as any as OpenAI.ChatCompletionCreateParamsStreaming,
+    } as unknown as OpenAI.ChatCompletionCreateParamsStreaming,
     {
       signal,
     }
